@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    -->
+
+    <!-- #region Supporting Scripts. These MUST be in the right order. Note no leading / - socket.io no longer needed  -->
+    <script defer src="../uibuilder/uibuilder.iife.min.js"></script>
+    <script defer src="./index.js">
+        /* OPTIONAL: Put your custom code in that */
+    </script>
+    <!-- #endregion -->
+
+    <title>Expending Cards</title>
+</head>
+
+<body>
+    <div class="container">
+        <div onclick="fnSendToNR('Expending the world')" ondblclick="uibuilder.eventSend(event)" data-type="eventSend"
+            data-foo="Bah" class="panel active"
+            style="background-image: url('https://images.unsplash.com/photo-1675764493275-3acc63dd2078?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80')">
+            <h3>Expending the world</h3>
+        </div>
+
+        <div onclick="fnSendToNR('Expending the company')" ondblclick="uibuilder.eventSend(event)" data-type="eventSend"
+            data-foo="Bah" class="panel"
+            style="background-image: url('https://images.unsplash.com/photo-1675764493275-3acc63dd2078?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80')">
+            <h3>Expending the company</h3>
+        </div>
+
+        <div onclick="fnSendToNR('Expending tthe church')" ondblclick="uibuilder.eventSend(event)" data-type="eventSend"
+            data-foo="Bah" class="panel"
+            style="background-image: url('https://images.unsplash.com/photo-1675764493275-3acc63dd2078?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80')">
+            <h3>Expending tthe church</h3>
+        </div>
+
+        <div onclick="fnSendToNR('Expending the universe')" ondblclick="uibuilder.eventSend(event)"
+            data-type="eventSend" data-foo="Bah" class="panel"
+            style="background-image: url('https://images.unsplash.com/photo-1675764493275-3acc63dd2078?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80')">
+            <h3>Expending the universe</h3>
+        </div>
+
+        <div onclick="fnSendToNR('Expending the money')" ondblclick="uibuilder.eventSend(event)" data-type="eventSend"
+            data-foo="Bah" class="panel"
+            style="background-image: url('https://images.unsplash.com/photo-1675764493275-3acc63dd2078?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80')">
+            <h3>Expending the money</h3>
+        </div>
+
+        <div onclick="fnSendToNR('Expending the duck')" ondblclick="uibuilder.eventSend(event)" data-type="eventSend"
+            data-foo="Bah" class="panel"
+            style="background-image: url('https://images.unsplash.com/photo-1675764493275-3acc63dd2078?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80')">
+            <h3>Expending the duck</h3>
+        </div>
+
+        <div onclick="fnSendToNR('Expending the mock')" ondblclick="uibuilder.eventSend(event)" data-type="eventSend"
+            data-foo="Bah" class="panel"
+            style="background-image: url('https://images.unsplash.com/photo-1675764493275-3acc63dd2078?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80')">
+            <h3>Expending the mock</h3>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
